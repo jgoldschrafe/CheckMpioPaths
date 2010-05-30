@@ -1,0 +1,6 @@
+CheckMpioPaths.vbs is a script to be used with NSClient++ that takes in a number
+of paths and returns an error status if Windows MPIO sees less than that
+number of paths to any of its multipath-aware storage.
+
+Because it only queries storage registered with MPIO, it will not alert on local
+disks which see only one path.
